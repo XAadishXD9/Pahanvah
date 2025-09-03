@@ -36,11 +36,11 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('EAGLENODE_bot.log'),
+        logging.FileHandler('unixnodes_bot.log'),
         logging.StreamHandler()
     ]
 )
-logger = logging.getLogger('EAGLENODEBot')
+logger = logging.getLogger('UnixNodesBot')
 
 # Load environment variables
 load_dotenv()
@@ -2655,3 +2655,4 @@ if __name__ == "__main__":
         logger.error(f"Bot crashed: {e}")
 
         traceback.print_exc()
+

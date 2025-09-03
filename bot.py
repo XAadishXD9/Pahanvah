@@ -1,4 +1,4 @@
-import discord
+import discord1
 from discord.ext import commands
 from discord import ui, app_commands
 import os
@@ -2653,4 +2653,5 @@ if __name__ == "__main__":
         bot.run(TOKEN)
     except Exception as e:
         logger.error(f"Bot crashed: {e}")
+
         traceback.print_exc()
